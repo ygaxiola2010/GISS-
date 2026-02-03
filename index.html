@@ -1,1 +1,206 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>GISS | Grupo Interdisciplinario Ser y Saber</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atención psicológica y asesoría integral para personas, familias y organizaciones.">
+  <style>
+    :root{
+      --azul:#0b2c5d;
+      --beige:#f4f1ea;
+      --naranja:#f28c28;
+      --blanco:#ffffff;
+      --gris:#6b7280;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;}
+    body{background:var(--beige);color:#1f2937;}
+    a{text-decoration:none}
 
+    .container{max-width:1100px;margin:auto;padding:40px 20px}
+
+    /* HERO */
+    .hero{
+      background:var(--azul);
+      color:var(--blanco);
+      text-align:center;
+      padding:60px 20px;
+    }
+    .hero img{max-width:120px;margin-bottom:20px}
+    .hero h1{font-size:2rem;margin-bottom:10px}
+    .hero p{font-size:1.1rem;margin-bottom:30px}
+    .btn-main{
+      background:var(--naranja);
+      color:#fff;
+      padding:14px 28px;
+      border-radius:30px;
+      font-weight:bold;
+      display:inline-block;
+    }
+
+    /* SELECTOR */
+    .selector{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      margin-top:-30px;
+    }
+    .card-select{
+      background:#fff;
+      padding:30px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 10px 20px rgba(0,0,0,.08);
+      font-weight:bold;
+      color:var(--azul);
+    }
+
+    /* SECTIONS */
+    section{margin-top:60px}
+    h2{color:var(--azul);margin-bottom:20px}
+    ul{list-style:none}
+    ul li{margin-bottom:10px}
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+    .box{
+      background:#fff;
+      padding:25px;
+      border-radius:16px;
+      box-shadow:0 6px 14px rgba(0,0,0,.07);
+    }
+
+    /* PROFESSIONALS */
+    .professionals{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      margin-top:20px;
+    }
+
+    /* BUSINESS */
+    .business{
+      background:var(--azul);
+      color:#fff;
+      padding:50px 20px;
+      border-radius:20px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#081f3f;
+      color:#fff;
+      margin-top:60px;
+      padding:30px 20px;
+      text-align:center;
+      font-size:.9rem;
+    }
+
+    @media(max-width:768px){
+      .selector{grid-template-columns:1fr}
+      .professionals{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="assets/logo-giss.png" alt="GISS">
+    <h1>GISS – Grupo Interdisciplinario Ser y Saber</h1>
+    <p>Atención psicológica y asesoría integral<br>para personas, familias y organizaciones</p>
+    <a class="btn-main" href="https://wa.me/526462107737?text=Hola,%20quiero%20información%20sobre%20sus%20servicios.">Contactar por WhatsApp</a>
+  </header>
+
+  <div class="container">
+
+    <!-- SELECTOR -->
+    <div class="selector">
+      <a href="#clinica" class="card-select">🟢 Atención psicológica</a>
+      <a href="#empresas" class="card-select">🔵 Servicios empresariales</a>
+    </div>
+
+    <!-- CLINICA -->
+    <section id="clinica">
+      <h2>Atención psicológica</h2>
+      <p>Acompañamiento profesional, confidencial y personalizado.</p>
+
+      <div class="services">
+        <div class="box">
+          <ul>
+            <li>✔ Terapia psicológica (todas las edades)</li>
+            <li>✔ Terapia individual, familiar y de pareja</li>
+            <li>✔ Diagnóstico psicológico profesional</li>
+            <li>✔ Atención a personas neurodivergentes</li>
+            <li>✔ Modalidad presencial y en línea</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="professionals">
+        <div class="box">
+          <strong>Psic. Reneé Miranda Jiménez Gaxiola</strong><br>
+          Céd. Prof. 14581274
+        </div>
+        <div class="box">
+          <strong>Dr. Jorge Iván Morua Soriano</strong><br>
+          Cédulas profesionales registradas
+        </div>
+      </div>
+
+      <div class="box" style="margin-top:20px">
+        📍 Zona: Col. 20 de Noviembre, Tijuana, B.C.<br>
+        Dirección completa se proporciona al agendar cita.
+      </div>
+
+      <a class="btn-main" style="margin-top:20px;display:inline-block"
+         href="https://wa.me/526462107737?text=Hola,%20quiero%20agendar%20una%20cita%20psicológica.">
+        Agendar cita
+      </a>
+    </section>
+
+    <!-- EMPRESAS -->
+    <section id="empresas">
+      <div class="business">
+        <h2 style="color:#fff">Servicios empresariales</h2>
+        <ul>
+          <li>• Asesoría psicológica organizacional</li>
+          <li>• Intervención en factores de riesgo psicosocial</li>
+          <li>• Cumplimiento NOM-035-STPS</li>
+          <li>• Atención psicológica a colaboradores</li>
+          <li>• Talleres y capacitaciones</li>
+          <li>• Asesoría educativa y legal</li>
+          <li><strong>• Facturación disponible</strong></li>
+        </ul>
+
+        <a class="btn-main" style="margin-top:20px;display:inline-block"
+           href="https://wa.me/526462107737?text=Hola,%20solicito%20información%20sobre%20servicios%20empresariales%20y%20NOM-035.">
+          Solicitar propuesta
+        </a>
+      </div>
+    </section>
+
+    <!-- METODOLOGIA -->
+    <section>
+      <h2>Metodología de trabajo</h2>
+      <p>
+        Nuestro enfoque integra psicología basada en evidencia, perspectiva humanista
+        e intervención interdisciplinaria, adaptando cada proceso a las necesidades
+        específicas de personas y organizaciones.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    📞 WhatsApp: (646) 210 77 37 | (664) 589 60 79<br>
+    Tijuana, Baja California · Facturación disponible
+  </footer>
+
+</body>
+</html>
