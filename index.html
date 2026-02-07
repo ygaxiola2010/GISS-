@@ -2,18 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GISS | Grupo Interdisciplinario Ser y Saber</title>
+  <meta name="description" content="GISS - Grupo Interdisciplinario Ser y Saber. Atención psicológica, asesoría y acompañamiento integral.">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f4f4f4;
+      color: #333;
     }
 
-    .hero {
+    header {
       background: #003b5c;
-      color: white;
+      color: #fff;
       text-align: center;
       padding: 40px 20px;
     }
@@ -25,35 +28,107 @@
       margin: 0 auto 20px auto;
     }
 
-    h1 {
-      margin: 10px 0;
+    header h1 {
+      margin: 10px 0 5px 0;
+      font-size: 26px;
     }
 
-    p {
-      max-width: 600px;
+    header p {
+      max-width: 700px;
       margin: 0 auto 20px auto;
+      font-size: 16px;
     }
 
     .btn-main {
       display: inline-block;
       background: #25d366;
-      color: white;
+      color: #fff;
       padding: 12px 25px;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #003b5c;
+      margin-bottom: 15px;
+    }
+
+    .services ul {
+      padding-left: 20px;
+    }
+
+    .services li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #003b5c;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 200px;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="hero">
+  <header>
     <img src="logo-giss.jpg" alt="Logo GISS" class="logo">
     <h1>GISS – Grupo Interdisciplinario Ser y Saber</h1>
-    <p>Atención psicológica y asesoría integral para personas, familias y organizaciones</p>
-    <a class="btn-main" href="https://wa.me/526462107737">Contactar por WhatsApp</a>
-  </div>
+    <p>Atención psicológica, asesoría y acompañamiento integral para personas, familias y organizaciones.</p>
+    <a class="btn-main" href="https://wa.me/52XXXXXXXXXX">Contactar por WhatsApp</a>
+  </header>
+
+  <section class="about">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      GISS es un grupo interdisciplinario enfocado en el bienestar emocional, psicológico y organizacional. 
+      Brindamos atención profesional con un enfoque humano, ético y personalizado.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Atención psicológica individual</li>
+      <li>Terapia familiar y de pareja</li>
+      <li>Acompañamiento emocional</li>
+      <li>Asesoría psicológica empresarial</li>
+      <li>Capacitación y talleres</li>
+      <li>Apoyo en cumplimiento NOM-035</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contacto</h2>
+    <p>
+      📞 WhatsApp: +52 6462107737<br>
+      📧 Correo: contacto@giss.com<br>
+      📍 Ubicación: (agregar dirección si se desea)
+    </p>
+  </section>
+
+  <footer>
+    © 2026 GISS – Grupo Interdisciplinario Ser y Saber. Todos los derechos reservados.
+  </footer>
 
 </body>
 </html>
