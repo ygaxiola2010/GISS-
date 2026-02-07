@@ -48,7 +48,26 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      margin: 5px;
+      margin: 8px;
+    }
+
+    .btn-clinica {
+      background: #1abc9c;
+    }
+
+    .btn-empresarial {
+      background: #003b5c;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ffffff;
+      color: #003b5c;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 15px;
+      font-weight: bold;
     }
 
     .btn-secondary {
@@ -112,16 +131,21 @@
 
 <header>
   <img src="logo-giss.jpg" alt="Logo GISS" class="logo">
+  <span class="badge">Atención en español e inglés | English spoken</span>
   <h1>GISS – Grupo Interdisciplinario Ser y Saber</h1>
   <p>
-    Atención psicológica clínica y asesoría empresarial con enfoque ético, humano y profesional. Acompañamos a personas y organizaciones en su bienestar emocional y desarrollo integral. Atención disponible en español e inglés.
+    Servicios profesionales en dos áreas claramente diferenciadas.<br>
+    Selecciona el tipo de atención que necesitas.
   </p>
-  <a class="btn-main" href="https://wa.me/526462107737">Agendar cita clínica</a>
-  <a class="btn-secondary" href="https://wa.me/526462107737">Asesoría empresarial</a>
+  <a class="btn-main btn-clinica" href="#clinica">Atención psicológica</a>
+  <a class="btn-main btn-empresarial" href="#empresarial">Asesoría y servicios empresariales</a>
 </header>
 
-<section>
-  <h2>Área Clínica</h2>
+<section id="clinica">
+  <h2>Atención psicológica</h2>
+  <p><strong>Servicios clínicos dirigidos a personas, parejas y familias.</strong></p>
+  <a class="btn-main btn-clinica" href="https://wa.me/52CLINICANUMERO">WhatsApp atención clínica</a>
+  <h2>Atención psicológica</h2>
   <div class="grid">
     <div class="card">
       <h3>Psicoterapia individual</h3>
@@ -138,8 +162,11 @@
   </div>
 </section>
 
-<section>
-  <h2>Área Empresarial</h2>
+<section id="empresarial">
+  <h2>Asesoría y servicios empresariales</h2>
+  <p><strong>Soluciones psicológicas y organizacionales para empresas.</strong></p>
+  <a class="btn-main btn-empresarial" href="https://wa.me/52EMPRESANUMERO">WhatsApp asesoría empresarial</a>
+  <h2>Asesoría y servicios empresariales</h2>
   <div class="grid">
     <div class="card">
       <h3>Asesoría psicológica organizacional</h3>
@@ -159,7 +186,7 @@
 <section>
   <h2>Contacto</h2>
   <p>
-    📞 WhatsApp: +52 6462107737<br>
+    📞 WhatsApp: +52 XX XXXX XXXX<br>
     📧 Correo: contacto@giss.com<br>
     🌎 Atención en español e inglés<br>
     📍 Ubicación: (consultorio y atención a empresas)
@@ -172,4 +199,3 @@
 
 </body>
 </html>
-
