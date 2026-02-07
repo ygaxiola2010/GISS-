@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GISS | Grupo Interdisciplinario Ser y Saber</title>
-  <meta name="description" content="GISS - Grupo Interdisciplinario Ser y Saber. Atención psicológica clínica y asesoría empresarial especializada.">
+  <meta name="description" content="GISS - Atención psicológica clínica y asesoría empresarial.">
 
   <style>
     body {
@@ -14,188 +14,169 @@
       color: #333;
     }
 
-    header {
+    .hero {
       background: #003b5c;
       color: #fff;
       text-align: center;
-      padding: 50px 20px;
+      padding: 40px 20px;
     }
 
     .logo {
       width: 260px;
       height: auto;
       display: block;
-      margin: 0 auto 25px auto;
+      margin: 0 auto 20px auto;
     }
 
-    header h1 {
+    h1 {
       margin: 10px 0;
-      font-size: 28px;
+      font-size: 26px;
     }
 
-    header p {
-      max-width: 750px;
+    .hero p {
+      max-width: 700px;
       margin: 0 auto 25px auto;
-      font-size: 16px;
       line-height: 1.5;
     }
 
-    .btn-main {
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .btn {
       display: inline-block;
-      background: #25d366;
-      color: #fff;
-      padding: 14px 30px;
+      padding: 14px 28px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      margin: 8px;
+      margin: 6px;
     }
 
     .btn-clinica {
-      background: #1abc9c;
+      background: #25d366;
+      color: #fff;
     }
 
     .btn-empresarial {
-      background: #003b5c;
-    }
-
-    .badge {
-      display: inline-block;
       background: #ffffff;
       color: #003b5c;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 13px;
-      margin-bottom: 15px;
-      font-weight: bold;
-    }
-
-    .btn-secondary {
-      display: inline-block;
-      background: #ffffff;
-      color: #003b5c;
-      padding: 14px 30px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 5px;
       border: 2px solid #003b5c;
     }
 
     section {
-      padding: 50px 20px;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
+      padding: 40px 20px;
     }
 
     section h2 {
       color: #003b5c;
-      margin-bottom: 20px;
-      font-size: 24px;
+      margin-bottom: 15px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+    ul {
+      padding-left: 20px;
     }
 
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #003b5c;
+    li {
+      margin-bottom: 8px;
     }
 
     footer {
       background: #003b5c;
       color: #fff;
       text-align: center;
-      padding: 25px;
+      padding: 20px;
       font-size: 14px;
     }
 
     @media (max-width: 600px) {
       .logo { width: 200px; }
-      header h1 { font-size: 22px; }
+      h1 { font-size: 22px; }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <img src="logo-giss.jpg" alt="Logo GISS" class="logo">
-  <span class="badge">Atención en español e inglés | English spoken</span>
-  <h1>GISS – Grupo Interdisciplinario Ser y Saber</h1>
-  <p>
-    Servicios profesionales en dos áreas claramente diferenciadas.<br>
-    Selecciona el tipo de atención que necesitas.
-  </p>
-  <a class="btn-main btn-clinica" href="#clinica">Atención psicológica</a>
-  <a class="btn-main btn-empresarial" href="#empresarial">Asesoría y servicios empresariales</a>
-</header>
+  <div class="hero">
+    <img src="logo-giss.jpg" alt="Logo GISS" class="logo">
+    <h1>GISS – Grupo Interdisciplinario Ser y Saber</h1>
+    <p>
+      Atención psicológica clínica y asesoría empresarial con enfoque ético y profesional.<br>
+      Atención disponible en español e inglés.
+    </p>
 
-<section id="clinica">
-  <h2>Atención psicológica</h2>
-  <p><strong>Servicios clínicos dirigidos a personas, parejas y familias.</strong></p>
-  <a class="btn-main btn-clinica" href="https://wa.me/526462107737">WhatsApp atención clínica</a>
-  <h2>Atención psicológica</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Psicoterapia individual</h3>
-      <p>Atención psicológica personalizada para adultos y adolescentes.</p>
-    </div>
-    <div class="card">
-      <h3>Terapia familiar y de pareja</h3>
-      <p>Intervención profesional para fortalecer vínculos y comunicación.</p>
-    </div>
-    <div class="card">
-      <h3>Acompañamiento emocional</h3>
-      <p>Apoyo en procesos de crisis, duelo, ansiedad y estrés.</p>
+    <div class="buttons">
+      <a class="btn btn-clinica" href="https://wa.me/52CLINICANUMERO">Atención psicológica</a>
+      <a class="btn btn-empresarial" href="https://wa.me/52EMPRESANUMERO">Asesoría empresarial</a>
     </div>
   </div>
-</section>
 
-<section id="empresarial">
-  <h2>Asesoría y servicios empresariales</h2>
-  <p><strong>Soluciones psicológicas y organizacionales para empresas.</strong></p>
-  <a class="btn-main btn-empresarial" href="https://wa.me/526462107737">WhatsApp asesoría empresarial</a>
-  <h2>Asesoría y servicios empresariales</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Asesoría psicológica organizacional</h3>
-      <p>Estrategias para el bienestar laboral y clima organizacional.</p>
-    </div>
-    <div class="card">
-      <h3>Cumplimiento NOM-035</h3>
-      <p>Diagnóstico, implementación y seguimiento conforme a la normativa.</p>
-    </div>
-    <div class="card">
-      <h3>Capacitación y talleres</h3>
-      <p>Desarrollo de habilidades emocionales y liderazgo.</p>
-    </div>
-  </div>
-</section>
+  <section id="clinica">
+      <h2>Atención psicológica</h2>
+      <p>
+        Ofrecemos un espacio seguro, empático y confidencial donde cada persona es escuchada
+        y acompañada con respeto, ética y profesionalismo. Nuestro objetivo es favorecer el
+        bienestar emocional, el autoconocimiento y el desarrollo personal en cada etapa de la vida.
+      </p>
 
-<section>
-  <h2>Contacto</h2>
-  <p>
-    📞 WhatsApp: +52 6462107737<br>
-    📧 Correo: contacto@giss.com<br>
-    🌎 Atención en español e inglés<br>
-    📍 Ubicación: (consultorio y atención a empresas)
-  </p>
-</section>
+      <div class="services">
+        <div class="box">
+          <ul>
+            <li>✔ Psicoterapia individual para adolescentes y adultos</li>
+            <li>✔ Terapia de pareja y terapia familiar</li>
+            <li>✔ Evaluación y diagnóstico psicológico profesional</li>
+            <li>✔ Acompañamiento a personas neurodivergentes</li>
+            <li>✔ Atención presencial y modalidad en línea</li>
+          </ul>
+        </div>
+      </div>
 
-<footer>
-  © 2026 GISS – Grupo Interdisciplinario Ser y Saber. Todos los derechos reservados.
-</footer>
+      <div class="professionals">
+        <div class="box">
+          <strong>Psic. Reneé Miranda Jiménez Gaxiola</strong><br>
+          Céd. Prof. 14581274<br>
+          Atención clínica con enfoque humano y basado en evidencia
+        </div>
+        <div class="box">
+          <strong>Dr. Jorge Iván Morua Soriano</strong><br>
+          Cédulas profesionales registradas<br>
+          Intervención psicológica y acompañamiento especializado
+        </div>
+      </div>
+
+      <div class="box" style="margin-top:20px">
+        📍 Zona: Col. 20 de Noviembre, Tijuana, B.C.<br>
+        La dirección completa se comparte al confirmar la cita para mayor privacidad.
+      </div>
+
+      <a class="btn-main" style="margin-top:20px;display:inline-block"
+         href="https://wa.me/526462107737?text=Hola,%20quisiera%20agendar%20una%20cita%20de%20atención%20psicológica.">
+        Agendar cita
+      </a>
+    </section>
+
+  <section id="empresarial">
+    <h2>Asesoría y servicios empresariales</h2>
+    <ul>
+      <li>Psicología organizacional</li>
+      <li>Implementación NOM-035</li>
+      <li>Capacitación y talleres</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>
+      📞 WhatsApp clínica y empresarial<br>
+      📧 contacto@giss.com
+    </p>
+  </section>
+
+  <footer>
+    © 2026 GISS – Grupo Interdisciplinario Ser y Saber
+  </footer>
 
 </body>
 </html>
