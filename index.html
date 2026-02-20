@@ -235,59 +235,222 @@
       Atención psicológica y asesoría integral<br>para personas, familias y organizaciones</p>
     <a class="btn-main" href="https://wa.me/526462107737">Contactar por WhatsApp</a>
   </header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>
+    GISS | Grupo Interdisciplinario Ser y Saber</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atención psicológica y asesoría integral para personas, familias y organizaciones.">
+
+  <style>
+    :root{
+      --azul:#0b2c5d;
+      --azul-oscuro:#081f3f;
+      --beige:#f4f1ea;
+      --naranja:#f28c28;
+      --verde:#25d366;
+      --blanco:#ffffff;
+      --gris:#6b7280;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;}
+    body{background:var(--beige);color:#1f2937;}
+    a{text-decoration:none}
+
+    .container{
+      max-width:1100px;
+      margin: 0 auto;
+      padding:60px 20px;
+    }
+
+    /* HERO */
+    .hero {
+  background: var(--azul);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centra horizontalmente */
+  justify-content: center;
+
+  text-align: center;       /* 👈 ESTO centra el texto */
+
+  padding: 100px 20px;
+}
+
+
+
+    .hero img {
+  display: block;
+  margin: 0 auto 30px auto;
+  max-width: 400px;   /* ⬅️ antes era 250px */
+  width: 100%;
+}
+
+
+
+    .hero h1{font-size:1.9rem;margin-bottom:10px}
+    .hero p{font-size:1.1rem;margin-bottom:30px}
+
+    .btn-main{
+      background:var(--naranja);
+      color:#fff;
+      padding:15px 30px;
+      border-radius:30px;
+      font-weight:bold;
+      display:inline-block;
+    }
+
+    /* SELECTOR */
+    .selector{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:25px;
+      header {
+        padding-bottom: 180px;
+    }
+
+    .card-select
+      background:#fff;
+      padding:35px 20px;
+      border-radius:18px;
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
+      font-weight:bold;
+      font-size:1.1rem;
+      color:var(--azul);
+    }
+
+    /* SECTIONS */
+    section{margin-top:80px}
+    h2{margin-bottom:15px}
+    p{margin-bottom:20px}
+
+    ul{list-style:none}
+    ul li{margin-bottom:10px}
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .box{
+      background:#fff;
+      padding:25px;
+      border-radius:16px;
+      box-shadow:0 6px 14px rgba(0,0,0,.06);
+    }
+
+    .professionals{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      margin-top:25px;
+    }
+
+    .btn-whatsapp{
+      background:var(--verde);
+      color:#fff;
+      padding:14px 28px;
+      border-radius:30px;
+      font-weight:bold;
+      display:inline-block;
+      margin-top:25px;
+    }
+
+    /* BUSINESS */
+    .business{
+      background:var(--azul);
+      color:#fff;
+      padding:60px 20px;
+      border-radius:20px;
+    }
+
+    .business h2{color:#fff}
+
+    .business .btn-whatsapp{
+      background:#fff;
+      color:var(--azul);
+    }
+
+    /* METODOLOGIA */
+    .metodologia{
+      text-align:center;
+      max-width:800px;
+      margin:auto;
+    }
+
+    /* REDES */
+    .redes{
+      text-align:center;
+    }
+
+    .qr{
+      margin-top:20px;
+      max-width:180px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:var(--azul-oscuro);
+      color:#fff;
+      padding:40px 20px;
+      text-align:center;
+      font-size:.9rem;
+    }
+
+    @media(max-width:768px){
+      .selector{grid-template-columns:1fr}
+      .professionals{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="logo-giss2.png" alt="GISS"
+    <h1>Grupo Interdisciplinario Ser y Saber</h1>
+
+    <p>
+      Atención psicológica y asesoría integral<br>para personas, familias y organizaciones</p>
+    <a class="btn-main" href="https://wa.me/526462107737">💬 Contactar por WhatsApp</a>
+  </header>
 
   <div class="container">
 
     <!-- SELECTOR -->
-    <section class="segmentacion">
-  <h2>¿Qué tipo de atención buscas?</h2>
+    <section>
+      <h2 style="text-align:center;color:var(--azul)">¿Qué servicio buscas?</h2>
 
-  <div class="opciones">
-    <a href="#clinica" class="btn-clinica">🟢 Consulta psicológica</a>
-    <a href="#empresarial" class="btn-empresa">🔵 Empresas y organizaciones</a>
-  </div>
-</section>
-
+      <div class="selector">
+        
+        <a href="#clinica" class="card-select">🟢 ATENCIÓN PSICOLÓGICA</a>
+        <a href="#empresas" class="card-select">🔵 SERVICIOS EMPRESARIALES</a>
+      </div>
+    </section>
 
     <!-- CLINICA -->
-    <section id="clinica" class="seccion">
-  <h2>Atención psicológica</h2>
+    <section id="clinica">
+      <h2 style="color:var(--azul)">🟢 Atención psicológica</h2>
+      <p>Acompañamiento profesional, confidencial y personalizado.</p>
 
-  <ul>
-    <li>Terapia individual (adultos y adolescentes)</li>
-    <li>Terapia de pareja</li>
-    <li>Terapia familiar</li>
-    <li>Atención a personas neurodivergentes</li>
-    <li>Modalidad presencial y en línea</li>
-  </ul>
-
-  <div class="botones">
-    <a href="https://wa.me/526462107737?text=Hola,%20quiero%20agendar%20una%20cita%20psicológica." class="btn-principal">
-      💬 Agendar cita por WhatsApp
-    </a>
-  </div>
-</section>
-
-
-     <!-- EMPRESARIAL -->
-   <section id="empresarial" class="seccion gris">
-  <h2>Servicios para empresas y organizaciones</h2>
-
-  <ul>
-    <li>Asesoría psicológica empresarial</li>
-    <li>Intervención en factores de riesgo psicosocial</li>
-    <li>Alineación con NOM-035</li>
-    <li>Talleres de salud mental y clima laboral</li>
-    <li>Atención psicológica para colaboradores</li>
-  </ul>
-
-  <div class="botones">
-    <a href="https://wa.me/526645896079?text=Hola,%20solicito%20información%20sobre%20servicios%20psicológicos%20para%20empresas." class="btn-secundario">
-      💬 Solicitar propuesta
-    </a>
-  </div>
-</section>
-
+      <div class="services">
+        <div class="box">
+          <ul>
+            <li>✔ Terapia psicológica (todas las edades)</li>
+            <li>✔ Terapia individual, familiar y de pareja</li>
+            <li>✔ Diagnóstico psicológico profesional</li>
+            <li>✔ Atención a personas neurodivergentes</li>
+            <li>✔ Modalidad presencial y en línea</li>
+          </ul>
+        </div>
+      </div>
 
       <div class="professionals">
         <div class="box">
@@ -305,7 +468,7 @@
         Dirección completa se proporciona al agendar cita.
       </div>
 
-      <a class="btn-whatsapp" href="https://wa.me/526462107737">Agendar cita por WhatsApp</a>
+      <a class="btn-whatsapp" href="https://wa.me/526462107737">💬 Agendar cita por WhatsApp</a>
     </section>
 
     <!-- EMPRESAS -->
