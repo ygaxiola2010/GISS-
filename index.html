@@ -213,59 +213,136 @@
       background:var(--azul-oscuro);
       color:#fff;
       padding:40px 20px;
-      text-align:center;
-      font-size:.9rem;
-    }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo Interdisciplinario Ser y Saber</title>
 
-    @media(max-width:768px){
-      .selector{grid-template-columns:1fr}
-      .professionals{grid-template-columns:1fr}
-    }
-  </style>
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI', sans-serif;
+  background:#ffffff;
+  color:#333;
+}
+
+/* HERO */
+header{
+  background:linear-gradient(135deg,#2c6e49,#1b4332);
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+header img{
+  width:170px;
+  margin-bottom:20px;
+}
+
+header h1{
+  margin-bottom:10px;
+  font-size:28px;
+}
+
+header p{
+  opacity:0.95;
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 30px;
+  border-radius:30px;
+  font-weight:bold;
+  text-decoration:none;
+  transition:0.3s ease;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* SECCIONES */
+section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+.clinica{
+  background:#f3faf6;
+}
+
+.empresarial{
+  background:#f6f1fa;
+}
+
+h2{
+  margin-bottom:25px;
+}
+
+.lista p{
+  margin:8px 0;
+}
+
+/* BOTONES ESPECÍFICOS */
+.btn-clinica{
+  background:#2c6e49;
+  color:white;
+}
+
+.btn-empresarial{
+  background:#6a0572;
+  color:white;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <img src="logo-giss2.png" alt="GISS"
-    <h1>Grupo Interdisciplinario Ser y Saber</h1>
-    <p>
-      Atención psicológica y asesoría integral<br>para personas, familias y organizaciones</p>
-    <a class="btn-main" href="https://wa.me/526462107737">Contactar por WhatsApp</a>
-  </header>
-<section class="seccion">
-  <h2>Nuestros Servicios</h2>
-  <p>Atención psicológica individual</p>
-  <p>Terapia familiar y de pareja</p>
-  <p>Evaluaciones psicológicas</p>
-  <p>Asesoría organizacional y NOM-035</p>
-</section>
+<header>
+  <img src="logo-giss2.png" alt="GISS">
+  <h1>Grupo Interdisciplinario Ser y Saber</h1>
+  <p>Atención Psicológica Integral para tu bienestar emocional</p>
 
-  <section class="seccion gris">
-  <h2>¿Quiénes Somos?</h2>
-  <p>
-    Somos un grupo interdisciplinario comprometido con el bienestar emocional,
-    el desarrollo humano y la salud mental integral.
-  </p>
-</section>
+  <a href="https://wa.me/526462107737?text=Hola,%20quiero%20agendar%20una%20cita%20clínica" 
+     class="btn btn-clinica">
+     Agendar cita
+  </a>
+</header>
 
-  <section class="seccion">
-  <h2>Agenda tu cita</h2>
-  <p>Estamos listos para acompañarte en tu proceso.</p>
-  <a class="btn-main" href="https://wa.me/526462107737">
-    Contactar por WhatsApp
+<section class="clinica">
+  <h2>Servicios Clínicos</h2>
+  <div class="lista">
+    <p>Psicoterapia individual</p>
+    <p>Terapia de pareja y familiar</p>
+    <p>Evaluaciones psicológicas</p>
+    <p>Acompañamiento emocional especializado</p>
+  </div>
+
+  <a href="https://wa.me/526462107737?text=Hola,%20quiero%20información%20sobre%20servicios%20clínicos"
+     class="btn btn-clinica">
+     WhatsApp Clínica
   </a>
 </section>
-  <style>
-    :root{
-      --azul:#0b2c5d;
-      --azul-oscuro:#081f3f;
-      --beige:#f4f1ea;
-      --naranja:#f28c28;
-      --verde:#25d366;
-      --blanco:#ffffff;
-      --gris:#6b7280;
-    }
 
+<section class="empresarial">
+  <h2>Servicios Empresariales</h2>
+  <div class="lista">
+    <p>Implementación NOM-035</p>
+    <p>Evaluación de Riesgos Psicosociales</p>
+    <p>Capacitación y talleres organizacionales</p>
+    <p>Consultoría en bienestar laboral</p>
+  </div>
+
+  <a href="https://wa.me/526462107737?text=Hola,%20quiero%20información%20sobre%20servicios%20empresariales"
+     class="btn btn-empresarial">
+     WhatsApp Empresarial
+  </a>
+</section>
+
+</body>
+</html>
     
