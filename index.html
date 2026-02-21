@@ -26,22 +26,32 @@ a{text-decoration:none}
 .container{
  max-width:1100px;
  margin:0 auto;
- padding:40px 20px
+ padding:40px 20px;
 }
 
 .hero{
-  background:var(--azul);
-  color:var(--blanco);
-  text-align:center;   /* 👈 ESTO CENTRA TODO EL CONTENIDO */
-  padding:90px 20px;
+  background:#0b2c5d;
+  color:#ffffff;
+  text-align:center;
+  padding:80px 20px;
 }
+
 .hero img{
   display:block;
-  margin:0 auto 30px auto;  /* 👈 centra horizontalmente */
-  max-width:180px;
+  margin:0 auto 25px auto;
+  width:160px;        /* tamaño fijo institucional */
+  max-width:100%;
   height:auto;
 }
 
+.hero h1{
+  font-size:1.8rem;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:1rem;
+}
 /* BOTONES */
 .btn-main{
   background:var(--naranja);
@@ -122,9 +132,9 @@ footer{
  
 <!--HERO-->
 <header class="hero">
-  <img src="logo-giss2.png" alt="GISS">
-  <h1>GISS – Grupo Interdisciplinario Ser y Saber</h1>
-  <p>Selecciona el área de tu interés</p>
+  <img src="logo-giss2.png" alt="Grupo Interdisciplinario Ser y Saber">
+  <h1>Grupo Interdisciplinario Ser y Saber</h1>
+  <p>Atención psicológica y asesoría integral</p>
 </header>
 
 <div class="container">
